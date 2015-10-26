@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /opt/ros/indigo/share/pi_speech_tutorial/build/devel/setup.sh
