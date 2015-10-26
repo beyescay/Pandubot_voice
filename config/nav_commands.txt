@@ -28,8 +28,11 @@ half speed
 full speed
 stop
 stop now
+<<<<<<< HEAD
 go to dustbin
 dustbin
+=======
+>>>>>>> d7252acda6f48dab3e39864c9ed195b502cdfb94
 halt
 abort
 kill
@@ -40,9 +43,12 @@ freeze
 turn off
 shut down
 cancel
+<<<<<<< HEAD
 bench 
 go to bench 
 go to restroom
 restroom
 go to home
 home
+=======
+>>>>>>> d7252acda6f48dab3e39864c9ed195b502cdfb94

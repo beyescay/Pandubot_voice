@@ -7,7 +7,10 @@
   	<param name="start_speed" value="0.1"/>
   	<param name="linear_increment" value="0.05"/>
   	<param name="angular_increment" value="0.4"/>
+<<<<<<< HEAD
 <remap from="voice_nav/cmd_vel" to="cmd_vel_mux/input/navi"/>
+=======
+>>>>>>> d7252acda6f48dab3e39864c9ed195b502cdfb94
   </node>
 
 </launch>

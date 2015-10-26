@@ -29,7 +29,11 @@ class voice_cmd_vel:
         self.msg = Twist()
 
         # Publish the Twist message to the cmd_vel topic
+<<<<<<< HEAD
         self.cmd_vel_pub = rospy.Publisher('speech', Twist)
+=======
+        self.cmd_vel_pub = rospy.Publisher('cmd_vel', Twist)
+>>>>>>> d7252acda6f48dab3e39864c9ed195b502cdfb94
         
         # Subscribe to the /recognizer/output topic to receive voice commands.
         rospy.Subscriber('/recognizer/output', String, self.speechCb)
@@ -48,10 +52,14 @@ class voice_cmd_vel:
                                     'half': ['half speed'],
                                     'full': ['full speed'],
                                     'pause': ['pause speech'],
+<<<<<<< HEAD
                                     'continue': ['continue speech'],
                                     'dustbin': ['go to dustbin','dustbin'],
                                     'bench': ['go to bench','bench'],
                                     'home': ['go to home','home']}
+=======
+                                    'continue': ['continue speech']}
+>>>>>>> d7252acda6f48dab3e39864c9ed195b502cdfb94
         
         rospy.loginfo("Ready to receive voice commands")
         
@@ -126,6 +134,7 @@ class voice_cmd_vel:
                 self.msg.linear.x -= copysign(self.linear_increment, self.msg.linear.x)
             if self.msg.angular.z != 0:
                 self.msg.angular.z -= copysign(self.angular_increment, self.msg.angular.z)
+<<<<<<< HEAD
         
         elif command =='dustbin': 
              self.msg.linear.y = 0.50;
@@ -139,6 +148,9 @@ class voice_cmd_vel:
              self.msg.linear.y = 0.0;
              self.msg.linear.z = 0.0;
         
+=======
+                
+>>>>>>> d7252acda6f48dab3e39864c9ed195b502cdfb94
         elif command in ['quarter', 'half', 'full']:
             if command == 'quarter':
                 self.speed = copysign(self.max_speed / 4, self.speed)

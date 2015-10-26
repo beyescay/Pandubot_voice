@@ -1,8 +1,13 @@
 <launch>
 
   <node name="recognizer" pkg="pocketsphinx" type="recognizer.py" output="screen">
+<<<<<<< HEAD
     <param name="lm" value="$(find pandubot_voice)/config/7985.lm"/>
     <param name="dict" value="$(find pandubot_voice)/config/7985.dic"/>
+=======
+    <param name="lm" value="$(find pi_speech_tutorial)/config/nav_commands.lm"/>
+    <param name="dict" value="$(find pi_speech_tutorial)/config/nav_commands.dic"/>
+>>>>>>> d7252acda6f48dab3e39864c9ed195b502cdfb94
   </node>
   
 </launch>
